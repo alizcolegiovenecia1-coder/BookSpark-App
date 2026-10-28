@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #17131b; color: #f7f0e8; font-family: Arial, sans-serif; }
+.encabezado { display: flex; justify-content: space-between; align-items: center; padding: 22px 8%; background: #0b0b2b; }
+.marca { display: flex; align-items: center; gap: 10px; color: white; text-decoration: none; font-size: 22px; font-weight: bold; }
+.logo { display: inline-flex; justify-content: center; align-items: center; width: 38px; height: 38px; border-radius: 12px; background: #d9a75b; color: #251b21; }
+.volver { color: #ffffff; text-decoration: none; }
+.menu { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; padding: 14px; background: #291d38; }
+.menu a { padding: 10px 16px; border-radius: 20px; color: #c9bbc9; text-decoration: none; }
+.menu a:hover, .menu a.activo { background: #576897; color: white; }
+.contenedor { width: 84%; max-width: 1000px; margin: 35px auto; }
+.etiqueta { color: #e9bd70; font-size: 12px; letter-spacing: 2px; font-weight: bold; }
+h1 { font-size: 34px; margin-bottom: 8px; }
+.introduccion, .detalle, .nota { color: #c9bdc9; line-height: 1.6; }
+.categorias { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0; }
+.categorias span { padding: 9px 15px; border: 1px solid #514151; border-radius: 20px; color: #e9dce8; }
+.categorias span:first-child { background: #576897; border-color: #576897; }
+.rejilla { display: flex; flex-wrap: wrap; gap: 20px; }
+.tarjeta { flex: 1; min-width: 220px; padding: 18px; background: #28212d; border: 1px solid #423443; border-radius: 16px; }
+.portada { display: flex; justify-content: center; align-items: center; height: 180px; border-radius: 8px; text-align: center; font-size: 22px; font-weight: bold; letter-spacing: 2px; box-shadow: inset 0 0 0 5px #ffffff20; }
+.portada1 { background: linear-gradient(140deg, #c18a59, #6c3546); }
+.portada2 { background: linear-gradient(140deg, #52786d, #233943); }
+.portada3 { background: linear-gradient(140deg, #a78bce, #55344f); }
+.tarjeta h2 { font-size: 19px; }
+.tarjeta p { color: #c9bdc9; font-size: 14px; }
+.boton { display: inline-block; margin-top: 10px; padding: 10px 14px; background: #f2e4d4; color: #482631; text-decoration: none; border-radius: 20px; font-size: 13px; font-weight: bold; }
+.nota { margin-top: 30px; font-size: 13px; }
+@media (max-width: 600px) { .contenedor { width: 90%; } h1 { font-size: 28px; } }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0b0b2b, #1b2735 70%, #090a0f);
+    color: #f7f0e8;
+}
+.stars {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  background: white;
+  box-shadow: 2vw 5vh 2px white, 10vw 8vh 2px white, 15vw 15vh 1px white,
+    22vw 22vh 1px white, 28vw 12vh 2px white, 32vw 32vh 1px white,
+    38vw 18vh 2px white, 42vw 35vh 1px white, 48vw 25vh 2px white,
+    53vw 42vh 1px white, 58vw 15vh 2px white, 63vw 38vh 1px white,
+    68vw 28vh 2px white, 73vw 45vh 1px white, 78vw 32vh 2px white,
+    83vw 48vh 1px white, 88vw 20vh 2px white, 93vw 52vh 1px white,
+    98vw 35vh 2px white, 5vw 60vh 1px white, 12vw 65vh 2px white,
+    18vw 72vh 1px white, 25vw 78vh 2px white, 30vw 85vh 1px white,
+    35vw 68vh 2px white, 40vw 82vh 1px white, 45vw 92vh 2px white,
+    50vw 75vh 1px white, 55vw 88vh 2px white, 60vw 95vh 1px white,
+    65vw 72vh 2px white, 70vw 85vh 1px white, 75vw 78vh 2px white,
+    80vw 92vh 1px white, 85vw 82vh 2px white, 90vw 88vh 1px white,
+    95vw 75vh 2px white;
+  animation: twinkle 8s infinite linear;
+}
